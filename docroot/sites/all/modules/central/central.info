@@ -1,0 +1,5 @@
+name = Central
+description = Central module for any global site configuration settings.
+core = 7.x
+package = Onboarding
+version = "7.x-1.0"
