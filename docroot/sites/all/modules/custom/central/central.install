@@ -37,13 +37,13 @@ function central_update_7101()
 /**
  * Implements hook_update_N().
  *
- * Enables modules Views, Features, Strongarm, Context, PathAuto, Diff, Libraries, JQuery Update, Devel, Module Filter, Admin Menu
- * Disables modules Toolbar, Shortcut
+ * Enables modules "PDT content type article" feature
  *
  */
 function central_update_7102()
 {
   $modules_to_enable = array(
+      'features',
       'jdt_content_type_article',
   );
   module_enable($modules_to_enable);
