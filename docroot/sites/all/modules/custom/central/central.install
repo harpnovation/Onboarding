@@ -33,3 +33,20 @@ function central_update_7101()
 
   drupal_flush_all_caches();
 }
+
+/**
+ * Implements hook_update_N().
+ *
+ * Enables modules Views, Features, Strongarm, Context, PathAuto, Diff, Libraries, JQuery Update, Devel, Module Filter, Admin Menu
+ * Disables modules Toolbar, Shortcut
+ *
+ */
+function central_update_7102()
+{
+  $modules_to_enable = array(
+      'jdt_content_type_article',
+  );
+  module_enable($modules_to_enable);
+
+  drupal_flush_all_caches();
+}
